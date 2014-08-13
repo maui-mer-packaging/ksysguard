@@ -92,7 +92,7 @@ desktop-file-install --delete-original       \
 %{_kf5_sharedir}/ksysguard
 %{_kf5_configdir}/ksysguard.knsrc
 %{_kf5_sysconfdir}/ksysguarddrc
-%{_kf5_iconsdir}/oxygen/*/actions/*.png
+%{_kf5_iconsdir}/*
 %{_datadir}/applications/ksysguard.desktop
 %{_datadir}/knotifications5/ksysguard.notifyrc
 # >> files
