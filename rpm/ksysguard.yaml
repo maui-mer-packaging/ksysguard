@@ -1,5 +1,5 @@
-Name         : kde5-ksysguard
-Version      : 4.97.0
+Name         : ksysguard
+Version      : 5.0.0
 Release      : 1
 Group        : System/Base
 License      : GPLv2+
@@ -22,19 +22,17 @@ Configure    : none
 Builder      : none
 
 PkgBR:
-    - kde5-rpm-macros
     - kf5-rpm-macros
     - extra-cmake-modules
     - qt5-tools
-    - kf5-umbrella
-    - kf5-kcoreaddons-devel
-    - kf5-ki18n-devel
-    - kf5-kitemviews-devel
-    - kf5-knewstuff-devel
-    - kf5-kconfig-devel
-    - kf5-kiconthemes-devel
-    - kf5-kdelibs4support-devel
-    - kf5-ksysguard-devel
+    - kcoreaddons-devel
+    - ki18n-devel
+    - kitemviews-devel
+    - knewstuff-devel
+    - kconfig-devel
+    - kiconthemes-devel
+    - kdelibs4support-devel
+    - libksysguard-devel
     - lm_sensors-devel
 PkgConfigBR:
     - Qt5Core
@@ -47,22 +45,16 @@ PkgConfigBR:
     - Qt5Test
     - Qt5Script
 Requires:
-    - kde5-filesystem
-
-Conflicts:
-    - kde-runtime
-Provides:
-    - ksysguard = %{version}-%{release}
+    - kf5-filesystem
 
 Files:
     - "%doc COPYING COPYING.DOC README"
-    - "%{_kde5_bindir}/ksysguard"
-    - "%{_kde5_bindir}/ksysguardd"
-    - "%{_kde5_libdir}/libkdeinit5_ksysguard.so"
-    - "%{_kde5_datadir}/ksysguard"
-    - "%{_kde5_sysconfdir}/xdg/ksysguard.knsrc"
-    - "%{_kde5_sysconfdir}/ksysguarddrc"
+    - "%{_kf5_bindir}/ksysguard"
+    - "%{_kf5_bindir}/ksysguardd"
+    - "%{_kf5_libdir}/libkdeinit5_ksysguard.so"
+    - "%{_kf5_sharedir}/ksysguard"
+    - "%{_kf5_configdir}/ksysguard.knsrc"
+    - "%{_kf5_sysconfdir}/ksysguarddrc"
+    - "%{_kf5_iconsdir}/oxygen/*/actions/*.png"
     - "%{_datadir}/applications/ksysguard.desktop"
-    - "%{_datadir}/doc/HTML/en/ksysguard"
-    - "%{_datadir}/icons/oxygen/*/actions/*.png"
     - "%{_datadir}/knotifications5/ksysguard.notifyrc"
