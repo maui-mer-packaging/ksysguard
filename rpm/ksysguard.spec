@@ -45,6 +45,15 @@ BuildRequires:  desktop-file-utils
 KDE Process Management application.
 
 
+%package doc
+Summary:    Documentation and user manuals for %{name}
+Group:      Documentation
+Requires:   %{name} = %{version}-%{release}
+
+%description doc
+Documentation and user manuals for %{name}
+
+
 %prep
 %setup -q -n %{name}-%{version}/upstream
 
@@ -88,3 +97,9 @@ desktop-file-install --delete-original       \
 %{_datadir}/knotifications5/ksysguard.notifyrc
 # >> files
 # << files
+
+%files doc
+%defattr(-,root,root,-)
+%{_kf5_htmldir}/en/ksysguard
+# >> files doc
+# << files doc

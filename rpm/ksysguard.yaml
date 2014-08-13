@@ -58,3 +58,12 @@ Files:
     - "%{_kf5_iconsdir}/oxygen/*/actions/*.png"
     - "%{_datadir}/applications/ksysguard.desktop"
     - "%{_datadir}/knotifications5/ksysguard.notifyrc"
+
+SubPackages:
+    - Name: doc
+      Group: Documentation
+      Summary: Documentation and user manuals for %{name}
+      Description: |
+        Documentation and user manuals for %{name}
+      Files:
+          - "%{_kf5_htmldir}/en/ksysguard"
