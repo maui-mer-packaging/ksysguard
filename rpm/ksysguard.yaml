@@ -33,7 +33,7 @@ PkgBR:
     - kiconthemes-devel
     - kdelibs4support-devel
     - libksysguard-devel
-    - lm_sensors-devel
+    #- lm_sensors-devel
 PkgConfigBR:
     - Qt5Core
     - Qt5DBus

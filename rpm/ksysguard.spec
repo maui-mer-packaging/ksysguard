@@ -38,7 +38,6 @@ BuildRequires:  kconfig-devel
 BuildRequires:  kiconthemes-devel
 BuildRequires:  kdelibs4support-devel
 BuildRequires:  libksysguard-devel
-BuildRequires:  lm_sensors-devel
 BuildRequires:  desktop-file-utils
 
 %description
