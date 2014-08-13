@@ -44,6 +44,7 @@ PkgConfigBR:
     - Qt5Concurrent
     - Qt5Test
     - Qt5Script
+    - Qt5PrintSupport
 Requires:
     - kf5-filesystem
 
