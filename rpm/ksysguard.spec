@@ -39,7 +39,6 @@ BuildRequires:  kconfig-devel
 BuildRequires:  kiconthemes-devel
 BuildRequires:  kdelibs4support-devel
 BuildRequires:  libksysguard-devel
-BuildRequires:  desktop-file-utils
 
 %description
 KDE Process Management application.
@@ -79,10 +78,6 @@ rm -rf %{buildroot}
 # >> install post
 # << install post
 
-desktop-file-install --delete-original       \
-  --dir %{buildroot}%{_datadir}/applications             \
-   %{buildroot}%{_datadir}/applications/*.desktop
-
 %files
 %defattr(-,root,root,-)
 %doc COPYING COPYING.DOC README
@@ -93,8 +88,8 @@ desktop-file-install --delete-original       \
 %{_kf5_configdir}/ksysguard.knsrc
 %{_kf5_sysconfdir}/ksysguarddrc
 %{_kf5_iconsdir}/*
-%{_datadir}/applications/ksysguard.desktop
-%{_datadir}/knotifications5/ksysguard.notifyrc
+%{_kf5_applicationsdir}/ksysguard.desktop
+%{_kf5_sharedir}/knotifications5/ksysguard.notifyrc
 # >> files
 # << files
 
