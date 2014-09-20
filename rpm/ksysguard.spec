@@ -90,6 +90,7 @@ rm -rf %{buildroot}
 %{_kf5_iconsdir}/*
 %{_kf5_applicationsdir}/ksysguard.desktop
 %{_kf5_sharedir}/knotifications5/ksysguard.notifyrc
+%{_kf5_sharedir}/kxmlgui5/*
 # >> files
 # << files
 
